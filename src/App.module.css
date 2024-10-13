@@ -1,0 +1,80 @@
+body {
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.appContainer {
+  width: 100%;
+  max-width: 95vw;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-right: 0.5rem;
+}
+
+.logoText {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.appTitle {
+  font-size: 2.5rem;
+  flex-grow: 1;
+  margin: 0;
+  text-align: center;
+}
+
+.searchBarContainer {
+  flex: 0 1 100%;
+  margin-top: 10px;
+}
+
+.pokemonGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  padding: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 100vw;
+  margin: 20px auto;
+  border-radius: 12px;
+  background-color: #fcfcfc;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .appTitle {
+    font-size: 1.75rem;
+  }
+
+  .logoText {
+    font-size: 1.15rem;
+  }
+
+  .searchBarContainer {
+    flex: 0 1 100%;
+    margin-top: 5px;
+  }
+
+  .pokemonGrid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
