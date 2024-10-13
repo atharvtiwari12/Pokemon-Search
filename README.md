@@ -1,4 +1,4 @@
-# Pokémon Search API
+# Pokémon Search 
 
 This is a Pokémon search application built with **React** and **Vite**, utilizing the [PokéAPI](https://pokeapi.co/). The app allows users to search for their favorite Pokémon and view detailed information about them in a card-based layout.
 
